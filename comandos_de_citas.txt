@@ -1,0 +1,363 @@
+app.MODELS
+# Create your models here.
+class Agendar_cita(models.Model):
+    fecha_cita = models.DateField()
+    hora_cita = models.TimeField()
+    especialidad = models.CharField(max_length=50)
+    motivo = models.CharField(max_length=50)
+    
+class Asignar_cita(models):
+    dia = models.DateField()
+    hora_inicio = models.TimeField
+    hora_finalizacion = models.TimeField
+
+
+
+---
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+agendacita1 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '08:00:00', especialidad = 'Nutricionista', motivo = 'reduccion de peso corporal')
+
+agendacita2 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '08:30:00', especialidad = 'Pediatra', motivo = 'Revision trimestral')
+
+agendacita3 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '09:00:00', especialidad = 'Psicologo', motivo = 'Perdida de Cordura')
+
+agendacita4 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '09:30:00', especialidad = 'Psicologo', motivo = 'Alucionamientos de espitirus')
+
+agendacita5 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '10:00:00', especialidad = 'Nutricionista', motivo = 'Aumento descomunal de peso')
+
+agendacita6 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '10:30:00', especialidad = 'Nutricionista', motivo = 'Revision mensual de peso')
+
+agendacita7 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '11:00:00', especialidad = 'Medico general', motivo = 'Diarrea por 3 dias seguidos')
+
+agendacita8 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '11:30:00', especialidad = 'Medico general', motivo = 'Malestar de cuerpo completo')
+
+agendacita9 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '12:00:00', especialidad = 'Medico general', motivo = 'Caida y fractura de pierna izquierda')
+
+agendacita10 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '14:00:00', especialidad = 'Psicologo', motivo = 'Tristeza por perdida de pariente cercano')
+
+agendacita11 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '14:30:00', especialidad = 'Medico general', motivo = 'Retiro de yeso')
+
+agendacita12 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '15:00:00', especialidad = 'Pediatra', motivo = 'Control de crecimiento y desarrollo')
+
+agendacita13 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '15:30:00', especialidad ='Odontólogo', motivo = 'Limpieza dental anual')
+
+agendacita14 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '16:00:00', especialidad ='Oftalmólogo', motivo = 'Revisión de visión borrosa')
+
+agendacita15 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '16:30:00', especialidad ='Dermatólogo', motivo = 'Tratamiento de acné')
+
+agendacita16 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '17:00:00', especialidad ='Cardiólogo', motivo = 'Dolor en el pecho')
+
+agendacita17 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '17:30:00', especialidad ='Otorrinolaringólogo', motivo = 'Infección de oído')
+
+agendacita18 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '18:00:00', especialidad ='Fisioterapeuta', motivo = 'Rehabilitación de rodilla')
+
+agendacita19 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '18:30:00', especialidad ='Ginecólogo', motivo = 'Chequeo ginecológico de rutina')
+
+agendacita20 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '19:00:00', especialidad ='Médico general', motivo = 'Dolor de garganta persistente')
+
+agendacita21 = Agendar_cita(fecha_cita = '2025-09-30', hora_cita = '19:30:00', especialidad ='Psicólogo', motivo = 'Terapia de control emocional')
+
+----------------------------------------------------------------------
+-------------------------------------------------------
+
+asignarcita1 = Asignar_cita(dia='2025-09-30', hora_inicio='08:00:00', hora_finalizacion='08:30:00')
+
+asignarcita2 = Asignar_cita(dia='2025-09-30', hora_inicio='08:30:00', hora_finalizacion='09:00:00')
+
+asignarcita3 = Asignar_cita(dia='2025-09-30', hora_inicio='09:00:00', hora_finalizacion='09:30:00')
+
+asignarcita4 = Asignar_cita(dia='2025-09-30', hora_inicio='09:30:00', hora_finalizacion='10:00:00')
+
+asignarcita5 = Asignar_cita(dia='2025-09-30', hora_inicio='10:00:00', hora_finalizacion='10:30:00')
+
+asignarcita6 = Asignar_cita(dia='2025-09-30', hora_inicio='10:30:00', hora_finalizacion='11:00:00')
+
+asignarcita7 = Asignar_cita(dia='2025-09-30', hora_inicio='11:00:00', hora_finalizacion='11:30:00')
+
+asignarcita8 = Asignar_cita(dia='2025-09-30', hora_inicio='11:30:00', hora_finalizacion='12:00:00')
+
+asignarcita9 = Asignar_cita(dia='2025-09-30', hora_inicio='12:00:00', hora_finalizacion='12:30:00')
+
+asignarcita10 = Asignar_cita(dia='2025-09-30', hora_inicio='14:00:00', hora_finalizacion='14:30:00')
+
+asignarcita11 = Asignar_cita(dia='2025-09-30', hora_inicio='14:30:00', hora_finalizacion='15:00:00')
+
+asignarcita12 = Asignar_cita(dia='2025-09-30', hora_inicio='15:00:00', hora_finalizacion='15:30:00')
+
+asignarcita13 = Asignar_cita(dia='2025-09-30', hora_inicio='15:30:00', hora_finalizacion='16:00:00')
+
+asignarcita14 = Asignar_cita(dia='2025-09-30', hora_inicio='16:00:00', hora_finalizacion='16:30:00')
+
+asignarcita15 = Asignar_cita(dia='2025-09-30', hora_inicio='16:30:00', hora_finalizacion='17:00:00')
+
+asignarcita16 = Asignar_cita(dia='2025-09-30', hora_inicio='17:00:00', hora_finalizacion='17:30:00')
+
+asignarcita17 = Asignar_cita(dia='2025-09-30', hora_inicio='17:30:00', hora_finalizacion='18:00:00')
+
+asignarcita18 = Asignar_cita(dia='2025-09-30', hora_inicio='18:00:00', hora_finalizacion='18:30:00')
+
+asignarcita19 = Asignar_cita(dia='2025-09-30', hora_inicio='18:30:00', hora_finalizacion='19:00:00')
+
+asignarcita20 = Asignar_cita(dia='2025-09-30', hora_inicio='19:00:00', hora_finalizacion='19:30:00')
+
+asignarcita21 = Asignar_cita(dia='2025-09-30', hora_inicio='19:30:00', hora_finalizacion='20:00:00')
+S
+
+
+-----tabla de usuarios---
+var_3 = Usuarios(id_usuario = 3, nombres_usuario= 'Jose', apellidos_usuarios= 'Romero', telefono_usuario
+ = '3207877254', direccion_usuario = 'calle 2 carrera 8 san miguel', fecha_nacimiento = '1988-1-21')  
+
+
+var_4 = Usuarios(id_usuario = 4, nombres_usuario= 'Carmen', apellidos_usuarios= 'Pereira', telefono_usuario = '3207844454', direccion_usuario = 'carrera 21 calle 18 San Victorio', fecha_nacimiento = '1998-3-2') '1998-3-2')
+
+modulo de medico
+
+class Especialidad(models.Model):
+    nombre = models.CharField(max_length=50)
+    descripcion = models.CharField()
+
+class Medico(models.Model):
+    numero_licencia = models.CharField(max_length=25)
+    horario_inicio = models.TimeField()
+    horario_fin = models.TimeField()
+
+
+modulo de paciente
+
+class Paciente(models.Model):
+    eps = models.CharField(max_length=25)
+    tipo_sangre = models.CharField(max_length=2)
+
+class HistorialMedico(models.Model):
+    fecha_registro = models.DateField()
+    diagnostico = models.CharField()
+    tratamiento = models.CharField()
+    observaciones = models.CharField()
+
+modulo de triage
+
+class Triage(models.Model):
+    nivel_prioridad = models.IntegerField()
+    fecha_evaluacion = models.DateTimeField()
+    observaciones = models.CharField()
+
+class SignosVitales(models.Model):
+    presion_arterial = models.CharField(max_length=10)
+    frecuencia_cardiaca = models.IntegerField()
+    frecuencia_respiratoria = models.IntegerField()
+    saturacion_oxigeno = models.IntegerField()
+
+
+modulo de recepcionista
+
+class Recepcionista(models.Model):
+    turno = models.CharField(max_length=20)
+
+class gestionCita(models.Model):
+    ingreso_paciente = models.BooleanField(default=False)
+    cancelacion_cita = models.BooleanField(default=False)
+    motivo_cancelacion = models.CharField()
+
+
+modulo de Inventario
+
+
+class CategoriaProducto(models.Model):
+    nombre = models.CharField(max_length=40)
+    descripcion = models.CharField()
+
+
+class Producto(models.Model):
+    nombre = models.CharField(max_length=100)
+    cantidad = models.IntegerField()
+    precio = models.IntegerField()
+    fecha_ingreso = models.DateField()
+
+
+modulo de facturación
+
+class Factura(models.Model):
+    codigo_factura = models.IntegerField()
+    fecha_emision = models.DateField()
+    total = models.IntegerField()
+
+class DetalleFactura(models.Model):
+    cantidad = models.IntegerField()
+    subtotal = models.IntegerField()
+
+
+----------------------------------------
+paciente1 = Paciente(eps='Sura', tipo_sangre='O+'); paciente1.save(); paciente2 = Paciente(eps='Coomeva', tipo_sangre='A+'); paciente2.save(); paciente3 = Paciente(eps='Nueva EPS', tipo_sangre='B+'); paciente3.save(); paciente4 = Paciente(eps='Sanitas', tipo_sangre='AB+'); paciente4.save(); paciente5 = Paciente(eps='Compensar', tipo_sangre='O-'); paciente5.save(); paciente6 = Paciente(eps='Savia Salud', tipo_sangre='A-'); paciente6.save(); paciente7 = Paciente(eps='Sura', tipo_sangre='B-'); paciente7.save(); paciente8 = Paciente(eps='Coosalud', tipo_sangre='O+'); paciente8.save(); paciente9 = Paciente(eps='Famisanar', tipo_sangre='A+'); paciente9.save(); paciente10 = Paciente(eps='Medimás', tipo_sangre='O+'); paciente10.save(); paciente11 = Paciente(eps='Salud Total', tipo_sangre='AB+'); paciente11.save(); paciente12 = Paciente(eps='Coomeva', tipo_sangre='B+'); paciente12.save(); paciente13 = Paciente(eps='Sura', tipo_sangre='A-'); paciente13.save(); paciente14 = Paciente(eps='Nueva EPS', tipo_sangre='O-'); paciente14.save(); paciente15 = Paciente(eps='Sanitas', tipo_sangre='O+'); paciente15.save(); paciente16 = Paciente(eps='Compensar', tipo_sangre='A+'); paciente16.save(); paciente17 = Paciente(eps='Savia Salud', tipo_sangre='B+'); paciente17.save(); paciente18 = Paciente(eps='Coosalud', tipo_sangre='AB-'); paciente18.save(); paciente19 = Paciente(eps='Famisanar', tipo_sangre='A-'); paciente19.save(); paciente20 = Paciente(eps='Sura', tipo_sangre='O+'); paciente20.save(); historial1 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Sobrepeso moderado', tratamiento='Dieta balanceada y ejercicio diario', observaciones='Paciente motivado a mejorar hábitos'); historial1.save(); historial2 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Control pediátrico normal', tratamiento='Continuar con controles trimestrales', observaciones='Buen desarrollo infantil'); historial2.save(); historial3 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Trastorno de ansiedad leve', tratamiento='Sesiones semanales con psicólogo', observaciones='Paciente consciente de su estado'); historial3.save(); historial4 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Trastorno de percepción auditiva', tratamiento='Terapia psicológica intensiva', observaciones='Se recomienda evaluación psiquiátrica'); historial4.save(); historial5 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Obesidad grado I', tratamiento='Plan nutricional bajo en grasas', observaciones='Seguimiento mensual'); historial5.save(); historial6 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Control de peso exitoso', tratamiento='Mantener rutina de ejercicio', observaciones='Progreso satisfactorio'); historial6.save(); historial7 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Gastroenteritis leve', tratamiento='Hidratación y dieta blanda', observaciones='Revisar si persisten síntomas'); historial7.save(); historial8 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Fatiga general', tratamiento='Descanso y analgésicos leves', observaciones='Posible causa por estrés'); historial8.save(); historial9 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Fractura de pierna izquierda', tratamiento='Inmovilización y yeso', observaciones='Control en 4 semanas'); historial9.save(); historial10 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Duelo por pérdida familiar', tratamiento='Terapia psicológica de apoyo', observaciones='Estado emocional estable'); historial10.save(); historial11 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Retiro de yeso post fractura', tratamiento='Terapia física para movilidad', observaciones='Curación satisfactoria'); historial11.save(); historial12 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Desarrollo infantil normal', tratamiento='Vitaminas y control futuro', observaciones='Crecimiento adecuado'); historial12.save(); historial13 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Limpieza dental anual', tratamiento='Profilaxis dental completa', observaciones='Sin caries ni lesiones'); historial13.save(); historial14 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Miopía leve', tratamiento='Uso de gafas permanentes', observaciones='Control visual cada 6 meses'); historial14.save(); historial15 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Acné moderado', tratamiento='Uso de crema dermatológica', observaciones='Revisar respuesta en 3 semanas'); historial15.save(); historial16 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Dolor torácico leve', tratamiento='Electrocardiograma y reposo', observaciones='Control con cardiólogo'); historial16.save(); historial17 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Otitis media aguda', tratamiento='Antibióticos y analgésicos', observaciones='Evitar exposición al agua'); historial17.save(); historial18 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Rehabilitación de rodilla', tratamiento='Terapias físicas semanales', observaciones='Recuperación progresiva'); historial18.save(); historial19 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Chequeo ginecológico normal', tratamiento='Exámenes de rutina', observaciones='Revisión anual recomendada'); historial19.save(); historial20 = HistorialMedico(fecha_registro='2025-09-30', diagnostico='Faringitis bacteriana', tratamiento='Antibióticos por 7 días', observaciones='Evitar bebidas frías'); historial20.save()
+
+
+
+-----
+medico1 = Medico(numero_licencia='LIC1001', horario_inicio='08:00:00', horario_fin='14:00:00'); medico1.save(); medico2 = Medico(numero_licencia='LIC1002', horario_inicio='09:00:00', horario_fin='15:00:00'); medico2.save(); medico3 = Medico(numero_licencia='LIC1003', horario_inicio='08:30:00', horario_fin='13:30:00'); medico3.save(); medico4 = Medico(numero_licencia='LIC1004', horario_inicio='10:00:00', horario_fin='16:00:00'); medico4.save(); medico5 = Medico(numero_licencia='LIC1005', horario_inicio='07:00:00', horario_fin='13:00:00'); medico5.save(); medico6 = Medico(numero_licencia='LIC1006', horario_inicio='09:00:00', horario_fin='15:00:00'); medico6.save(); medico7 = Medico(numero_licencia='LIC1007', horario_inicio='11:00:00', horario_fin='17:00:00'); medico7.save(); medico8 = Medico(numero_licencia='LIC1008', horario_inicio='08:00:00', horario_fin='14:00:00'); medico8.save(); medico9 = Medico(numero_licencia='LIC1009', horario_inicio='09:30:00', horario_fin='15:30:00'); medico9.save(); medico10 = Medico(numero_licencia='LIC1010', horario_inicio='08:00:00', horario_fin='14:00:00'); medico10.save(); medico11 = Medico(numero_licencia='LIC1011', horario_inicio='12:00:00', horario_fin='18:00:00'); medico11.save(); medico12 = Medico(numero_licencia='LIC1012', horario_inicio='10:00:00', horario_fin='16:00:00'); medico12.save(); medico13 = Medico(numero_licencia='LIC1013', horario_inicio='08:00:00', horario_fin='14:00:00'); medico13.save(); medico14 = Medico(numero_licencia='LIC1014', horario_inicio='07:30:00', horario_fin='13:30:00'); medico14.save(); medico15 = Medico(numero_licencia='LIC1015', horario_inicio='09:00:00', horario_fin='15:00:00'); medico15.save(); medico16 = Medico(numero_licencia='LIC1016', horario_inicio='08:00:00', horario_fin='13:00:00'); medico16.save(); medico17 = Medico(numero_licencia='LIC1017', horario_inicio='10:00:00', horario_fin='16:00:00'); medico17.save(); medico18 = Medico(numero_licencia='LIC1018', horario_inicio='11:00:00', horario_fin='17:00:00'); medico18.save(); medico19 = Medico(numero_licencia='LIC1019', horario_inicio='08:00:00', horario_fin='14:00:00'); medico19.save(); medico20 = Medico(numero_licencia='LIC1020', horario_inicio='07:00:00', horario_fin='13:00:00'); medico20.save(); especialidad1 = Especialidad(nombre='Medicina General', descripcion='Atención básica y diagnóstico inicial de enfermedades comunes.'); especialidad1.save(); especialidad2 = Especialidad(nombre='Nutrición', descripcion='Evaluación y orientación sobre hábitos alimenticios y control de peso.'); especialidad2.save(); especialidad3 = Especialidad(nombre='Pediatría', descripcion='Atención médica integral para niños y adolescentes.'); especialidad3.save(); especialidad4 = Especialidad(nombre='Psicología', descripcion='Evaluación y tratamiento de problemas emocionales y de conducta.'); especialidad4.save(); especialidad5 = Especialidad(nombre='Odontología', descripcion='Diagnóstico y tratamiento de problemas dentales y bucales.'); especialidad5.save(); especialidad6 = Especialidad(nombre='Oftalmología', descripcion='Atención especializada en salud visual y ocular.'); especialidad6.save(); especialidad7 = Especialidad(nombre='Dermatología', descripcion='Tratamiento de afecciones en la piel, cabello y uñas.'); especialidad7.save(); especialidad8 = Especialidad(nombre='Cardiología', descripcion='Prevención y tratamiento de enfermedades del corazón y sistema circulatorio.'); especialidad8.save(); especialidad9 = Especialidad(nombre='Fisioterapia', descripcion='Rehabilitación física de lesiones y recuperación motora.'); especialidad9.save(); especialidad10 = Especialidad(nombre='Psiquiatría', descripcion='Diagnóstico y manejo de trastornos mentales y emocionales.'); especialidad10.save(); especialidad11 = Especialidad(nombre='Ginecología', descripcion='Atención médica relacionada con el sistema reproductor femenino.'); especialidad11.save(); especialidad12 = Especialidad(nombre='Endocrinología', descripcion='Estudio y tratamiento de trastornos hormonales y metabólicos.'); especialidad12.save(); especialidad13 = Especialidad(nombre='Traumatología', descripcion='Atención de lesiones musculares y óseas por accidentes o caídas.'); especialidad13.save(); especialidad14 = Especialidad(nombre='Neurología', descripcion='Diagnóstico y tratamiento de enfermedades del sistema nervioso.'); especialidad14.save(); especialidad15 = Especialidad(nombre='Otorrinolaringología', descripcion='Tratamiento de afecciones del oído, nariz y garganta.'); especialidad15.save(); especialidad16 = Especialidad(nombre='Alergología', descripcion='Diagnóstico y tratamiento de alergias e hipersensibilidades.'); especialidad16.save(); especialidad17 = Especialidad(nombre='Urología', descripcion='Atención de enfermedades del sistema urinario y reproductor masculino.'); especialidad17.save(); especialidad18 = Especialidad(nombre='Oncología', descripcion='Diagnóstico y tratamiento de pacientes con cáncer.'); especialidad18.save(); especialidad19 = Especialidad(nombre='Gastroenterología', descripcion='Tratamiento de trastornos del aparato digestivo.'); especialidad19.save(); especialidad20 = Especialidad(nombre='Reumatología', descripcion='Manejo de enfermedades articulares, musculares y autoinmunes.'); especialidad20.save()
+
+
+--------
+
+
+categoria1 = CategoriaProducto(nombre='Medicamentos Generales', descripcion='Fármacos usados en tratamientos básicos y control del dolor')
+categoria2 = CategoriaProducto(nombre='Suplementos Nutricionales', descripcion='Vitaminas y productos naturales para la salud')
+categoria3 = CategoriaProducto(nombre='Insumos Pediátricos', descripcion='Productos destinados al cuidado infantil')
+categoria4 = CategoriaProducto(nombre='Material Psicológico', descripcion='Libros y herramientas para apoyo emocional y terapias')
+categoria5 = CategoriaProducto(nombre='Insumos Odontológicos', descripcion='Material usado en limpiezas y tratamientos dentales')
+categoria6 = CategoriaProducto(nombre='Equipos de Fisioterapia', descripcion='Artículos usados en rehabilitación física')
+categoria7 = CategoriaProducto(nombre='Productos Dermatológicos', descripcion='Cremas, lociones y tratamientos para la piel')
+categoria8 = CategoriaProducto(nombre='Instrumentos Oftalmológicos', descripcion='Lentes, gotas y equipos ópticos')
+categoria9 = CategoriaProducto(nombre='Insumos Ginecológicos', descripcion='Artículos para exámenes y control ginecológico')
+categoria10 = CategoriaProducto(nombre='Material de Laboratorio', descripcion='Reactivos y utensilios para análisis clínicos')
+categoria11 = CategoriaProducto(nombre='Antibióticos', descripcion='Medicamentos usados para tratar infecciones bacterianas')
+categoria12 = CategoriaProducto(nombre='Antiinflamatorios', descripcion='Medicamentos para reducir inflamaciones o fiebre')
+categoria13 = CategoriaProducto(nombre='Analgésicos', descripcion='Productos para aliviar el dolor general o localizado')
+categoria14 = CategoriaProducto(nombre='Antisépticos', descripcion='Sustancias para desinfección y limpieza de heridas')
+categoria15 = CategoriaProducto(nombre='Vacunas', descripcion='Dosis para prevenir enfermedades comunes')
+categoria16 = CategoriaProducto(nombre='Material Quirúrgico', descripcion='Instrumentos usados en procedimientos médicos')
+categoria17 = CategoriaProducto(nombre='Productos Cardiológicos', descripcion='Equipos y fármacos para control de la presión y corazón')
+categoria18 = CategoriaProducto(nombre='Material Pediátrico', descripcion='Suministros para atención médica infantil')
+categoria19 = CategoriaProducto(nombre='Productos Respiratorios', descripcion='Inhaladores y nebulizadores para terapias respiratorias')
+categoria20 = CategoriaProducto(nombre='Cuidado Personal Médico', descripcion='Elementos de higiene y protección personal del personal médico')
+
+CategoriaProducto.objects.bulk_create([
+    categoria1, categoria2, categoria3, categoria4, categoria5, categoria6, categoria7, categoria8, categoria9, categoria10,
+    categoria11, categoria12, categoria13, categoria14, categoria15, categoria16, categoria17, categoria18, categoria19, categoria20
+])
+producto1 = Producto(nombre='Paracetamol 500mg', cantidad=200, precio=1500, fecha_ingreso='2025-09-20')
+producto2 = Producto(nombre='Vitamina C 1000mg', cantidad=150, precio=2500, fecha_ingreso='2025-09-21')
+producto3 = Producto(nombre='Jarabe Infantil Multivitamínico', cantidad=80, precio=12000, fecha_ingreso='2025-09-22')
+producto4 = Producto(nombre='Guía de Relajación Psicológica', cantidad=35, precio=15000, fecha_ingreso='2025-09-23')
+producto5 = Producto(nombre='Cepillo Dental Clínico', cantidad=100, precio=3500, fecha_ingreso='2025-09-24')
+producto6 = Producto(nombre='Banda Elástica de Rehabilitación', cantidad=70, precio=14000, fecha_ingreso='2025-09-25')
+producto7 = Producto(nombre='Crema Antiacné', cantidad=90, precio=13000, fecha_ingreso='2025-09-26')
+producto8 = Producto(nombre='Lágrimas Artificiales', cantidad=60, precio=12000, fecha_ingreso='2025-09-27')
+producto9 = Producto(nombre='Prueba de Embarazo', cantidad=150, precio=4000, fecha_ingreso='2025-09-28')
+producto10 = Producto(nombre='Reactivo para Hemoglobina', cantidad=60, precio=20000, fecha_ingreso='2025-09-29')
+producto11 = Producto(nombre='Amoxicilina 500mg', cantidad=120, precio=2200, fecha_ingreso='2025-09-30')
+producto12 = Producto(nombre='Ibuprofeno 400mg', cantidad=180, precio=1800, fecha_ingreso='2025-10-01')
+producto13 = Producto(nombre='Analgésico Forte 750mg', cantidad=90, precio=3000, fecha_ingreso='2025-10-02')
+producto14 = Producto(nombre='Alcohol Antiséptico 70%', cantidad=250, precio=4000, fecha_ingreso='2025-10-03')
+producto15 = Producto(nombre='Vacuna Influenza', cantidad=50, precio=38000, fecha_ingreso='2025-10-04')
+producto16 = Producto(nombre='Bisturí Desechable', cantidad=100, precio=2500, fecha_ingreso='2025-10-05')
+producto17 = Producto(nombre='Tensiómetro Digital', cantidad=30, precio=95000, fecha_ingreso='2025-10-06')
+producto18 = Producto(nombre='Nebulizador Portátil', cantidad=25, precio=120000, fecha_ingreso='2025-10-07')
+producto19 = Producto(nombre='Mascarillas Quirúrgicas', cantidad=400, precio=800, fecha_ingreso='2025-10-08')
+producto20 = Producto(nombre='Guantes de Látex', cantidad=500, precio=600, fecha_ingreso='2025-10-09')
+
+Producto.objects.bulk_create([
+    producto1, producto2, producto3, producto4, producto5, producto6, producto7, producto8, producto9, producto10,
+    producto11, producto12, producto13, producto14, producto15, producto16, producto17, producto18, producto19, producto20
+])
+
+
+
+
+----
+
+
+recepcionista1 = Recepcionista(turno='Mañana')
+recepcionista2 = Recepcionista(turno='Tarde')
+recepcionista3 = Recepcionista(turno='Noche')
+recepcionista4 = Recepcionista(turno='Mañana')
+recepcionista5 = Recepcionista(turno='Tarde')
+recepcionista6 = Recepcionista(turno='Noche')
+recepcionista7 = Recepcionista(turno='Mañana')
+recepcionista8 = Recepcionista(turno='Tarde')
+recepcionista9 = Recepcionista(turno='Noche')
+recepcionista10 = Recepcionista(turno='Mañana')
+recepcionista11 = Recepcionista(turno='Tarde')
+recepcionista12 = Recepcionista(turno='Noche')
+recepcionista13 = Recepcionista(turno='Mañana')
+recepcionista14 = Recepcionista(turno='Tarde')
+recepcionista15 = Recepcionista(turno='Noche')
+recepcionista16 = Recepcionista(turno='Mañana')
+recepcionista17 = Recepcionista(turno='Tarde')
+recepcionista18 = Recepcionista(turno='Noche')
+recepcionista19 = Recepcionista(turno='Mañana')
+recepcionista20 = Recepcionista(turno='Tarde')
+
+gestion1 = gestionCita(ingreso_paciente=True, cancelacion_cita=False, motivo_cancelacion='Ninguno')
+gestion2 = gestionCita(ingreso_paciente=True, cancelacion_cita=False, motivo_cancelacion='Ninguno')
+gestion3 = gestionCita(ingreso_paciente=False, cancelacion_cita=True, motivo_cancelacion='No pudo asistir')
+gestion4 = gestionCita(ingreso_paciente=True, cancelacion_cita=False, motivo_cancelacion='Ninguno')
+gestion5 = gestionCita(ingreso_paciente=False, cancelacion_cita=True, motivo_cancelacion='Cita reprogramada')
+gestion6 = gestionCita(ingreso_paciente=True, cancelacion_cita=False, motivo_cancelacion='Ninguno')
+gestion7 = gestionCita(ingreso_paciente=True, cancelacion_cita=False, motivo_cancelacion='Ninguno')
+gestion8 = gestionCita(ingreso_paciente=False, cancelacion_cita=True, motivo_cancelacion='Emergencia personal')
+gestion9 = gestionCita(ingreso_paciente=True, cancelacion_cita=False, motivo_cancelacion='Ninguno')
+gestion10 = gestionCita(ingreso_paciente=True, cancelacion_cita=False, motivo_cancelacion='Ninguno')
+gestion11 = gestionCita(ingreso_paciente=False, cancelacion_cita=True, motivo_cancelacion='Paciente se mejoró')
+gestion12 = gestionCita(ingreso_paciente=True, cancelacion_cita=False, motivo_cancelacion='Ninguno')
+gestion13 = gestionCita(ingreso_paciente=False, cancelacion_cita=True, motivo_cancelacion='Inconveniente de transporte')
+gestion14 = gestionCita(ingreso_paciente=True, cancelacion_cita=False, motivo_cancelacion='Ninguno')
+gestion15 = gestionCita(ingreso_paciente=True, cancelacion_cita=False, motivo_cancelacion='Ninguno')
+gestion16 = gestionCita(ingreso_paciente=False, cancelacion_cita=True, motivo_cancelacion='Error en agendamiento')
+gestion17 = gestionCita(ingreso_paciente=True, cancelacion_cita=False, motivo_cancelacion='Ninguno')
+gestion18 = gestionCita(ingreso_paciente=True, cancelacion_cita=False, motivo_cancelacion='Ninguno')
+gestion19 = gestionCita(ingreso_paciente=False, cancelacion_cita=True, motivo_cancelacion='Olvido de cita')
+gestion20 = gestionCita(ingreso_paciente=True, cancelacion_cita=False, motivo_cancelacion='Ninguno')
+for obj in [
+    recepcionista1, recepcionista2, recepcionista3, recepcionista4, recepcionista5, recepcionista6,
+    recepcionista7, recepcionista8, recepcionista9, recepcionista10, recepcionista11, recepcionista12,
+    recepcionista13, recepcionista14, recepcionista15, recepcionista16, recepcionista17, recepcionista18,
+    recepcionista19, recepcionista20,
+    gestion1, gestion2, gestion3, gestion4, gestion5, gestion6, gestion7, gestion8, gestion9, gestion10,
+    gestion11, gestion12, gestion13, gestion14, gestion15, gestion16, gestion17, gestion18, gestion19, gestion20
+]:
+    obj.save()
+
+----------------------------------------------
+triage1 = Triage(nivel_prioridad=1, fecha_evaluacion='2025-10-10 08:00:00', observaciones='Dolor leve de cabeza')
+triage2 = Triage(nivel_prioridad=2, fecha_evaluacion='2025-10-10 08:10:00', observaciones='Fiebre moderada')
+triage3 = Triage(nivel_prioridad=3, fecha_evaluacion='2025-10-10 08:20:00', observaciones='Dolor abdominal intenso')
+triage4 = Triage(nivel_prioridad=4, fecha_evaluacion='2025-10-10 08:30:00', observaciones='Dificultad respiratoria leve')
+triage5 = Triage(nivel_prioridad=1, fecha_evaluacion='2025-10-10 08:40:00', observaciones='Corte superficial en mano')
+triage6 = Triage(nivel_prioridad=2, fecha_evaluacion='2025-10-10 08:50:00', observaciones='Dolor muscular general')
+triage7 = Triage(nivel_prioridad=3, fecha_evaluacion='2025-10-10 09:00:00', observaciones='Presión arterial elevada')
+triage8 = Triage(nivel_prioridad=4, fecha_evaluacion='2025-10-10 09:10:00', observaciones='Pérdida parcial del conocimiento')
+triage9 = Triage(nivel_prioridad=2, fecha_evaluacion='2025-10-10 09:20:00', observaciones='Dolor en articulaciones')
+triage10 = Triage(nivel_prioridad=1, fecha_evaluacion='2025-10-10 09:30:00', observaciones='Molestia estomacal leve')
+triage11 = Triage(nivel_prioridad=3, fecha_evaluacion='2025-10-10 09:40:00', observaciones='Herida profunda en pierna')
+triage12 = Triage(nivel_prioridad=4, fecha_evaluacion='2025-10-10 09:50:00', observaciones='Fuerte dolor en el pecho')
+triage13 = Triage(nivel_prioridad=2, fecha_evaluacion='2025-10-10 10:00:00', observaciones='Vómito y mareo')
+triage14 = Triage(nivel_prioridad=1, fecha_evaluacion='2025-10-10 10:10:00', observaciones='Fatiga leve')
+triage15 = Triage(nivel_prioridad=3, fecha_evaluacion='2025-10-10 10:20:00', observaciones='Sangrado nasal continuo')
+triage16 = Triage(nivel_prioridad=4, fecha_evaluacion='2025-10-10 10:30:00', observaciones='Convulsión repentina')
+triage17 = Triage(nivel_prioridad=2, fecha_evaluacion='2025-10-10 10:40:00', observaciones='Dolor lumbar')
+triage18 = Triage(nivel_prioridad=1, fecha_evaluacion='2025-10-10 10:50:00', observaciones='Irritación ocular')
+triage19 = Triage(nivel_prioridad=3, fecha_evaluacion='2025-10-10 11:00:00', observaciones='Trauma leve en rodilla')
+triage20 = Triage(nivel_prioridad=4, fecha_evaluacion='2025-10-10 11:10:00', observaciones='Accidente con fractura visible')
+
+Triage.objects.bulk_create([
+    triage1, triage2, triage3, triage4, triage5, triage6, triage7, triage8, triage9, triage10,
+    triage11, triage12, triage13, triage14, triage15, triage16, triage17, triage18, triage19, triage20
+])
+
+
+signo1 = SignosVitales(presion_arterial='120/80', frecuencia_cardiaca=75, frecuencia_respiratoria=16, saturacion_oxigeno=98)
+signo2 = SignosVitales(presion_arterial='130/85', frecuencia_cardiaca=80, frecuencia_respiratoria=18, saturacion_oxigeno=97)
+signo3 = SignosVitales(presion_arterial='110/70', frecuencia_cardiaca=72, frecuencia_respiratoria=15, saturacion_oxigeno=99)
+signo4 = SignosVitales(presion_arterial='140/90', frecuencia_cardiaca=85, frecuencia_respiratoria=20, saturacion_oxigeno=96)
+signo5 = SignosVitales(presion_arterial='115/75', frecuencia_cardiaca=70, frecuencia_respiratoria=14, saturacion_oxigeno=99)
+signo6 = SignosVitales(presion_arterial='125/80', frecuencia_cardiaca=78, frecuencia_respiratoria=17, saturacion_oxigeno=97)
+signo7 = SignosVitales(presion_arterial='135/88', frecuencia_cardiaca=82, frecuencia_respiratoria=18, saturacion_oxigeno=96)
+signo8 = SignosVitales(presion_arterial='150/95', frecuencia_cardiaca=90, frecuencia_respiratoria=22, saturacion_oxigeno=94)
+signo9 = SignosVitales(presion_arterial='120/78', frecuencia_cardiaca=74, frecuencia_respiratoria=16, saturacion_oxigeno=98)
+signo10 = SignosVitales(presion_arterial='118/76', frecuencia_cardiaca=73, frecuencia_respiratoria=15, saturacion_oxigeno=99)
+signo11 = SignosVitales(presion_arterial='145/92', frecuencia_cardiaca=88, frecuencia_respiratoria=21, saturacion_oxigeno=95)
+signo12 = SignosVitales(presion_arterial='110/68', frecuencia_cardiaca=70, frecuencia_respiratoria=14, saturacion_oxigeno=99)
+signo13 = SignosVitales(presion_arterial='130/80', frecuencia_cardiaca=79, frecuencia_respiratoria=17, saturacion_oxigeno=97)
+signo14 = SignosVitales(presion_arterial='125/85', frecuencia_cardiaca=76, frecuencia_respiratoria=18, saturacion_oxigeno=98)
+signo15 = SignosVitales(presion_arterial='138/88', frecuencia_cardiaca=83, frecuencia_respiratoria=19, saturacion_oxigeno=96)
+signo16 = SignosVitales(presion_arterial='120/82', frecuencia_cardiaca=77, frecuencia_respiratoria=16, saturacion_oxigeno=98)
+signo17 = SignosVitales(presion_arterial='142/90', frecuencia_cardiaca=84, frecuencia_respiratoria=20, saturacion_oxigeno=96)
+signo18 = SignosVitales(presion_arterial='115/74', frecuencia_cardiaca=72, frecuencia_respiratoria=15, saturacion_oxigeno=99)
+signo19 = SignosVitales(presion_arterial='150/100', frecuencia_cardiaca=92, frecuencia_respiratoria=23, saturacion_oxigeno=94)
+signo20 = SignosVitales(presion_arterial='118/79', frecuencia_cardiaca=75, frecuencia_respiratoria=16, saturacion_oxigeno=98)
+
+SignosVitales.objects.bulk_create([
+    signo1, signo2, signo3, signo4, signo5, signo6, signo7, signo8, signo9, signo10,
+    signo11, signo12, signo13, signo14, signo15, signo16, signo17, signo18, signo19, signo20
+])
