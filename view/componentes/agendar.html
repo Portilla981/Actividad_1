@@ -1,0 +1,30 @@
+<div class="agendar">
+  <div class="agendar__container">
+    <h2 class="agendar__title">Agendar Cita Médica</h2>
+
+    <form class="agendar__form" method="post">
+      
+      <div class="agendar__group">
+        <label for="fecha_cita" class="agendar__label">Fecha de la cita:</label>
+        <input type="date" id="fecha_cita" name="fecha_cita" class="agendar__input" required>
+      </div>
+
+      <div class="agendar__group">
+        <label for="hora_cita" class="agendar__label">Hora de la cita:</label>
+        <input type="time" id="hora_cita" name="hora_cita" class="agendar__input" required>
+      </div>
+
+      <div class="agendar__group">
+        <label for="especialidad" class="agendar__label">Especialidad:</label>
+        <input type="text" id="especialidad" name="especialidad" class="agendar__input" placeholder="Ej: Pediatría" required>
+      </div>
+
+      <div class="agendar__group">
+        <label for="motivo" class="agendar__label">Motivo:</label>
+        <input type="text" id="motivo" name="motivo" class="agendar__input" placeholder="Ej: Dolor de cabeza" required>
+      </div>
+
+      <button type="submit" class="agendar__button">Agendar Cita</button>
+    </form>
+  </div>
+</div>
